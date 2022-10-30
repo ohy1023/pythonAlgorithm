@@ -1,5 +1,5 @@
 def isSame(nums):
-    if all(nums[k] == nums[4-k] for k in range(2)):
+    if nums == nums[::-1]:
         return True
     return False
 
