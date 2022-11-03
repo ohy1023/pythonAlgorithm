@@ -10,10 +10,3 @@ for j in range(1,max(a)):
         x.append(j)
 
 print(max(x))
-
-
-# 4 11
-# 802
-# 743
-# 457
-# 539
