@@ -12,5 +12,3 @@ def solution(x):
         answer = False
     print(answer)
     return answer
-
-solution(182)
