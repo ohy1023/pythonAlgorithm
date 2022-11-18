@@ -11,7 +11,7 @@ for e in expression:
         if e == '*':
             answer = first * second
         elif e == '/':
-            answer = first // second
+            answer = first / second
         elif e == '+':
             answer = first + second
         elif e == '-':
