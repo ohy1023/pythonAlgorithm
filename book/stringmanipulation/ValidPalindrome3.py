@@ -1,5 +1,5 @@
+# 가장 빠름
 import re
-
 
 class Solution:
 
