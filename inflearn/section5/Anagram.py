@@ -9,9 +9,7 @@ for x in a:
 for x in b:
     sd[x] = sd.get(x, 0) - 1
 
-for x in sd.values():
-    if x != 0:
-        print("NO")
-        break
+if any(sd.values()) != 0:
+    print("NO")
 else:
     print("YES")
