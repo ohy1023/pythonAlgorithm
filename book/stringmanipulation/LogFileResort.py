@@ -1,5 +1,5 @@
 class Solution:
-    def reorderLogFiles(self,logs):
+    def reorderLogFiles(self, logs):
         letters = []
         digits = []
         for log in logs:
