@@ -5,7 +5,7 @@ def solution(v):
     global answer
     if v == n:
         answer = 0
-        for i in range(len(mul)):
+        for i in range(n):
             answer += res[i] * mul[i]
         if answer == m:
             for k in res:
