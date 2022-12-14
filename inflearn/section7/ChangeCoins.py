@@ -1,7 +1,7 @@
 def solution(v, s):
     global cnt
-    # if s > T:
-    #     return
+    if s > T:
+        return
     if v == k:
         if s == T:
             cnt += 1
