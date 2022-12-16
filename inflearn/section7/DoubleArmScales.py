@@ -12,6 +12,6 @@ def solution(v, s):
 if __name__ == "__main__":
     k = int(input())
     g = list(map(int, input().split()))
-    res =set()
+    res = set()
     solution(0, 0)
     print(sum(g) - len(res))
