@@ -1,3 +1,7 @@
+import sys
+
+sys.setrecursionlimit(10 ** 6)
+
 def DFS(x, y):
     dx = [-1, 0, 1, 0]
     dy = [0, -1, 0, 1]
