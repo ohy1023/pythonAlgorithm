@@ -1,14 +1,19 @@
+import sys
 
-n ,k = map(int,input().split())
-result = 0
-while True :
-    target = (n//k) * k
-    result += (n- target)
-    n = target
-    if n<k:
-        break
+input = sys.stdin.readline
 
-    result+=1
-    n //=k
-result += (n-1)
-print(result)
+if __name__ == "__main__":
+    n, k = map(int, input().split())
+
+    count = 0
+
+    while True:
+        if n == 1:
+            print(count)
+            break
+
+        if n % k == 0:
+            n //= k
+        else:
+            n -= 1
+        count += 1
