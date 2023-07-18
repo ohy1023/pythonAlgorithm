@@ -5,10 +5,13 @@ input = sys.stdin.readline
 
 def DFS(x, y):
     global res, cnt
+    # 목적지 도착
     if x == (n - 1) and y == (m - 1):
         if res > cnt:
             res = cnt
         return
+
+    # 상하좌우 탐색
     for i in range(4):
         nx = x + dx[i]
         ny = y + dy[i]
