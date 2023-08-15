@@ -1,8 +1,8 @@
 import sys
 
-input = sys.stdin.readline
 
 if __name__ == "__main__":
+    input = sys.stdin.readline
     n = int(input())
     warehouses = list(map(int, input().split()))
     dy = [0] * 101
