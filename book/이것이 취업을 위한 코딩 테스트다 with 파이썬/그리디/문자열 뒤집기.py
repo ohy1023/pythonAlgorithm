@@ -1,6 +1,9 @@
 import sys
 
-input = sys.stdin.readline
+"""
+이코테 level.1
+문자열 뒤집기 - 그리디
+"""
 
 
 def sol_split():
@@ -29,8 +32,20 @@ def sol_answer():
     return (count + 1) // 2
 
 
+def sol_answer_ver2():
+    count = 0
+    prev = '?'
+    for i in s:
+        if i != prev:
+            prev = i
+            count += 1
+    return count // 2
+
+
 if __name__ == "__main__":
+    input = sys.stdin.readline
     s = input().strip()
 
     print(sol_split())
     print(sol_answer())
+    print(sol_answer_ver2())
