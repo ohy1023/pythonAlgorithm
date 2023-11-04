@@ -19,13 +19,13 @@ def solution(name):
         while idx < length and name[idx] == 'A':
             idx += 1
 
-        # 현재 위치에서 왼쪽으로 이동 후, 오른쪽으로 이동하는 경우와
-        # 현재 위치에서 오른쪽으로 이동 후, 왼쪽으로 이동하는 경우 중 작은 값을 선택
+        # 순서대로 가는 것과, 뒤로 돌아가는 것 중 이동수가 적은 것을 선택
         move = min(move, i * 2 + length - idx)
+        # BBBBAAAAAAAB와 같이 처음부터 뒷부분을 먼저 입력하는 것이 더 빠른 경우도 고려
         move = min(move, (length - idx) * 2 + i)
 
     return answer + move
 
 
 if __name__ == "__main__":
-    print(solution("JAN"))
+    print(solution("JEROEN"))
